@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Regular Expressions Guide</h1>
+        <p>Learn, test, and master regex patterns with examples and explanations.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#basic-syntax">Basic Syntax</a></li>
+            <li><a href="#metacharacters">Meta Characters</a></li>
+            <li><a href="#character-classes">Character Classes</a></li>
+            <li><a href="#quantifiers">Quantifiers</a></li>
+            <li><a href="#anchors">Anchors</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#regex-tester">Live Tester</a></li>
+            <li><a href="#reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="toc" class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#basic-syntax">Basic Syntax</a></li>
+                <li><a href="#metacharacters">Meta Characters</a></li>
+                <li><a href="#character-classes">Character Classes</a></li>
+                <li><a href="#quantifiers">Quantifiers</a></li>
+                <li><a href="#anchors">Anchors</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#regex-tester">Live Regex Tester</a></li>
+                <li><a href="#reference">Reference</a></li>
+            </ul>
+        </section>
+
+        <section id="content-area" class="content">
+            <h2>Welcome to the Regex Guide</h2>
+            <p>This guide provides you with detailed explanations, examples, and a live regex tester to help you master regular expressions.</p>
+            <p>Click on the sections in the Table of Contents to dive into each topic.</p>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Introduction to Regular Expressions</h2>
+            <p>Regular expressions (regex) are powerful tools used to search, match, and manipulate strings of text. They consist of a combination of literal characters and special metacharacters that define patterns.</p>
+            <p>Example: The regex <code>/hello/</code> matches the word "hello" in any string of text.</p>
+            <p>In this guide, you will learn how to use regex for various tasks like validating input, searching text, and more.</p>
+        </section>
+
+        <!-- Basic Syntax Section -->
+        <section id="basic-syntax">
+            <h2>Basic Syntax</h2>
+            <p>Regex patterns are composed of basic elements that include literals, special characters, and more. Here's an overview of the basic syntax:</p>
+            <ul>
+                <li><code>a</code> - Matches the character 'a' literally.</li>
+                <li><code>abc</code> - Matches the exact sequence "abc".</li>
+                <li><code>.</code> - Matches any character except a newline.</li>
+                <li><code>\d</code> - Matches any digit (0-9).</li>
+                <li><code>\w</code> - Matches any word character (a-z, A-Z, 0-9, _).</li>
+                <li><code>\s</code> - Matches any whitespace character (space, tab, newline).</li>
+            </ul>
+            <p>Example: The regex <code>\\d{3}-\\d{3}-\\d{4}</code> matches phone numbers in the format 123-456-7890.</p>
+        </section>
+
+        <!-- Meta Characters Section -->
+        <section id="metacharacters">
+            <h2>Meta Characters</h2>
+            <p>Meta characters have special meanings in regex and are essential for constructing patterns. Some of the most common meta characters include:</p>
+            <ul>
+                <li><code>.</code> - Matches any single character except newline.</li>
+                <li><code>^</code> - Anchors a match at the beginning of the string.</li>
+                <li><code>$</code> - Anchors a match at the end of the string.</li>
+                <li><code>\b</code> - Matches a word boundary.</li>
+                <li><code>[ ]</code> - Matches any character within the brackets.</li>
+                <li><code>[^ ]</code> - Matches any character not within the brackets.</li>
+            </ul>
+            <p>Example: The regex <code>\\bword\\b</code> matches the word "word" as a whole word.</p>
+        </section>
+
+        <!-- Character Classes Section -->
+        <section id="character-classes">
+            <h2>Character Classes</h2>
+            <p>Character classes allow you to define sets of characters to match. Some examples include:</p>
+            <ul>
+                <li><code>[a-z]</code> - Matches any lowercase letter from a to z.</li>
+                <li><code>[A-Z]</code> - Matches any uppercase letter from A to Z.</li>
+                <li><code>[0-9]</code> - Matches any digit from 0 to 9.</li>
+                <li><code>[^a-z]</code> - Matches any character that is not a lowercase letter.</li>
+                <li><code>[a-zA-Z0-9]</code> - Matches any alphanumeric character.</li>
+            </ul>
+        </section>
+
+        <!-- Quantifiers Section -->
+        <section id="quantifiers">
+            <h2>Quantifiers</h2>
+            <p>Quantifiers define how many times a pattern should match. Some common quantifiers include:</p>
+            <ul>
+                <li><code>*</code> - Matches 0 or more occurrences of the preceding element.</li>
+                <li><code>+</code> - Matches 1 or more occurrences of the preceding element.</li>
+                <li><code>?</code> - Matches 0 or 1 occurrence of the preceding element.</li>
+                <li><code>{n}</code> - Matches exactly n occurrences of the preceding element.</li>
+                <li><code>{n,}</code> - Matches at least n occurrences of the preceding element.</li>
+                <li><code>{n,m}</code> - Matches between n and m occurrences of the preceding element.</li>
+            </ul>
+        </section>
+
+        <!-- Anchors Section -->
+        <section id="anchors">
+            <h2>Anchors</h2>
+            <p>Anchors are used to match the position within a string:</p>
+            <ul>
+                <li><code>^</code> - Matches the start of a string.</li>
+                <li><code>$</code> - Matches the end of a string.</li>
+            </ul>
+            <p>Example: The regex <code>^abc</code> matches any string that starts with "abc".</p>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Here are some practical regex examples:</p>
+            <ul>
+                <li>Match an email address: <code>/\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z]{2,}\\b/</code></li>
+                <li>Match a phone number: <code>/\\d{3}-\\d{3}-\\d{4}/</code></li>
+                <li>Match a date in the format YYYY-MM-DD: <code>/\\d{4}-\\d{2}-\\d{2}/</code></li>
+                <li>Match a URL: <code>/https?:\\/\\/(www\\.)?[a-z0-9]+\\.[a-z]{2,3}/</code></li>
+            </ul>
+        </section>
+
+        <!-- Live Regex Tester Section -->
+        <section id="regex-tester">
+            <h2>Live Regex Tester</h2>
+            <input type="text" id="regex-input" placeholder="Enter Regex (e.g., ^[a-z]+$)">
+            <input type="text" id="text-input" placeholder="Enter text to match">
+            <p id="result"></p>
+            <button onclick="testRegex()">Test Regex</button>
+        </section>
+
+        <!-- Reference Section -->
+        <section id="reference">
+            <h2>Regex Reference</h2>
+            <p>Here is a quick reference for some commonly used regex patterns:</p>
+            <ul>
+                <li><code>\\d</code> - Matches any digit</li>
+                <li><code>\\w</code> - Matches any alphanumeric character (letters, digits, and underscore)</li>
+                <li><code>\\s</code> - Matches any whitespace character (space, tab, newline)</li>
+                <li><code>^</code> - Start of string</li>
+                <li><code>$</code> - End of string</li>
+                <li><code>.*</code> - Matches any character (except newlines) 0 or more times</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 4px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+.toc {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #35424a;
+}
+
+code {
+    background: #eef;
+    padding: 2px 5px;
+    border-radius: 3px;
+} */
+
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+.toc {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #35424a;
+}
+
+code {
+    background: #eef;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Regex Tester Section */
+#regex-tester input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
